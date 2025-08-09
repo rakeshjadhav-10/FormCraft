@@ -1,0 +1,200 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background: #f5f5f5;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Builder Styles */
+.builder-panel, .preview-panel, .list-panel {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-title input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.field-types {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.field-type-btn {
+  padding: 8px 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fields-list {
+  margin-bottom: 20px;
+}
+
+.field-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.field-item.active {
+  border-color: #4CAF50;
+  background: #f0fff0;
+}
+
+.field-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff4444;
+  cursor: pointer;
+}
+
+.field-editor {
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"] {
+  width: 100%;
+  padding: 8px;
+}
+
+.options-editor {
+  margin-top: 15px;
+}
+
+.option-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.save-form {
+  padding: 10px 20px;
+  background: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Preview Styles */
+.preview-field {
+  margin-bottom: 15px;
+}
+
+.preview-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.preview-field input,
+.preview-field select,
+.preview-field textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+.required {
+  color: red;
+  margin-left: 5px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* List Styles */
+.form-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-card:hover {
+  background: #f5f5f5;
+}
+
+.meta-info {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 14px;
+}
+
+.delete-form {
+  margin-top: 10px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.empty-list, .preview-empty {
+  color: #666;
+  text-align: center;
+  padding: 20px;
+}
