@@ -4,9 +4,8 @@
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
-  {
   "compilerOptions": {
-    "typeRoots": ["./node_modules/@types", "./src/global.d.ts"]
+    "typeRoots": ["./node_modules/@types", "./src/global.d.ts"],
+    "types": ["vite/client"] // Add this if using Vite
   }
-}
 }
